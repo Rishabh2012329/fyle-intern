@@ -23,10 +23,10 @@ export default function UserDetails () {
                     </div>
                 </div>
                 <div className="flex flex-col justify-around">
-                    <h1 className="font-600 text-3xl">{state?.name}</h1>
-                    <h2>{state?.bio}</h2>
-                    <h2 className="flex flex-row "><img src="/location.svg" className="mr-2"/>{state?.location}</h2 >
-                    <h2>Twitter: {state?.twitter}</h2>
+                    <h1 className="font-600 text-3xl">{state?.name??"John Doe"}</h1>
+                    <h2>{state?.bio||"Bio Here"}</h2>
+                    <h2 className="flex flex-row "><img src="/location.svg" className="mr-2"/>{state?.location||"Location"}</h2 >
+                    <h2>Twitter: {state?.twitter||"Twitter"}</h2>
                 </div>
             </div>
             <div className="flex flex-row mt-8">
